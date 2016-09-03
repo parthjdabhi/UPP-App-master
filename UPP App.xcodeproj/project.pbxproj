@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EA60A011D7B15A300629845 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA609FF1D7B15A300629845 /* Post.swift */; };
+		5EA60A021D7B15A300629845 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA60A001D7B15A300629845 /* User.swift */; };
+		5EA60A041D7B161600629845 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA60A031D7B161600629845 /* TimelineViewController.swift */; };
+		5EA60A061D7B2A2B00629845 /* TweetTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA60A051D7B2A2B00629845 /* TweetTableViewCell1.swift */; };
+		5EA60A081D7B2E4C00629845 /* TweetViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA60A071D7B2E4C00629845 /* TweetViewTableViewCell.swift */; };
+		BF1EF390230E7ECC14BD886A /* Pods_UPP_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C70CC2D8A856877D15E86D /* Pods_UPP_App.framework */; };
+		DA2D01501D728264001382F5 /* Sign-up-page-new-1_0001s_0002s_0000_txt-input-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2D014F1D728264001382F5 /* Sign-up-page-new-1_0001s_0002s_0000_txt-input-copy.png */; };
+		DA2D01521D728374001382F5 /* yellowbox.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2D01511D728374001382F5 /* yellowbox.png */; };
+		DA733C4B1D727478006F97D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C4A1D727478006F97D8 /* AppDelegate.swift */; };
+		DA733C4D1D727478006F97D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C4C1D727478006F97D8 /* ViewController.swift */; };
+		DA733C501D727478006F97D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA733C4E1D727478006F97D8 /* Main.storyboard */; };
+		DA733C531D727478006F97D8 /* UPP_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA733C511D727478006F97D8 /* UPP_App.xcdatamodeld */; };
+		DA733C551D727478006F97D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA733C541D727478006F97D8 /* Assets.xcassets */; };
+		DA733C581D727478006F97D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA733C561D727478006F97D8 /* LaunchScreen.storyboard */; };
+		DA733C631D727478006F97D8 /* UPP_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C621D727478006F97D8 /* UPP_AppTests.swift */; };
+		DA733C6E1D727478006F97D8 /* UPP_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C6D1D727478006F97D8 /* UPP_AppUITests.swift */; };
+		DA733C7C1D7274A9006F97D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA733C7B1D7274A9006F97D8 /* GoogleService-Info.plist */; };
+		DA733C7E1D7278BA006F97D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C7D1D7278BA006F97D8 /* LoginViewController.swift */; };
+		DA733C801D7278C5006F97D8 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C7F1D7278C5006F97D8 /* RegisterViewController.swift */; };
+		DA733C831D727A90006F97D8 /* SignUp Button.png in Resources */ = {isa = PBXBuildFile; fileRef = DA733C821D727A90006F97D8 /* SignUp Button.png */; };
+		DA733C851D727AAF006F97D8 /* Login Button.png in Resources */ = {isa = PBXBuildFile; fileRef = DA733C841D727AAF006F97D8 /* Login Button.png */; };
+		DA733C871D727ABB006F97D8 /* Grey Box.png in Resources */ = {isa = PBXBuildFile; fileRef = DA733C861D727ABB006F97D8 /* Grey Box.png */; };
+		DA733C911D727C5C006F97D8 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C891D727C5C006F97D8 /* UIViewExtensions.swift */; };
+		DA733C921D727C5C006F97D8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C8A1D727C5C006F97D8 /* Helper.swift */; };
+		DA733C931D727C5C006F97D8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C8B1D727C5C006F97D8 /* Constants.swift */; };
+		DA733C941D727C5C006F97D8 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C8C1D727C5C006F97D8 /* CommonUtils.swift */; };
+		DA733C951D727C5C006F97D8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C8D1D727C5C006F97D8 /* AppState.swift */; };
+		DA733C961D727C5C006F97D8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C8E1D727C5C006F97D8 /* Extensions.swift */; };
+		DA733C971D727C5C006F97D8 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C8F1D727C5C006F97D8 /* TextField.swift */; };
+		DA733C981D727C5C006F97D8 /* AEXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C901D727C5C006F97D8 /* AEXML.swift */; };
+		DA733C9A1D727D01006F97D8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA733C991D727D01006F97D8 /* ProfileViewController.swift */; };
+		DA733C9E1D727DEE006F97D8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DA733C9D1D727DEE006F97D8 /* MBProgressHUD.m */; };
+		DA7CB8831D768C53008BA705 /* WhiteCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7CB8821D768C53008BA705 /* WhiteCircle.png */; };
+		DA7CB8851D768EAD008BA705 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7CB8841D768EAD008BA705 /* user.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA733C5F1D727478006F97D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA733C3F1D727478006F97D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA733C461D727478006F97D8;
+			remoteInfo = "UPP App";
+		};
+		DA733C6A1D727478006F97D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA733C3F1D727478006F97D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA733C461D727478006F97D8;
+			remoteInfo = "UPP App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16A1D7128AC361CB8E78B881 /* Pods-UPP App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UPP App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UPP App/Pods-UPP App.debug.xcconfig"; sourceTree = "<group>"; };
+		5EA609FF1D7B15A300629845 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5EA60A001D7B15A300629845 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5EA60A031D7B161600629845 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		5EA60A051D7B2A2B00629845 /* TweetTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell1.swift; sourceTree = "<group>"; };
+		5EA60A071D7B2E4C00629845 /* TweetViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetViewTableViewCell.swift; sourceTree = "<group>"; };
+		7753506AEF9413FF76DB3D40 /* Pods-UPP App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UPP App.release.xcconfig"; path = "Pods/Target Support Files/Pods-UPP App/Pods-UPP App.release.xcconfig"; sourceTree = "<group>"; };
+		79C70CC2D8A856877D15E86D /* Pods_UPP_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UPP_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2D014F1D728264001382F5 /* Sign-up-page-new-1_0001s_0002s_0000_txt-input-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign-up-page-new-1_0001s_0002s_0000_txt-input-copy.png"; sourceTree = "<group>"; };
+		DA2D01511D728374001382F5 /* yellowbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowbox.png; sourceTree = "<group>"; };
+		DA733C471D727478006F97D8 /* UPP App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UPP App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA733C4A1D727478006F97D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA733C4C1D727478006F97D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA733C4F1D727478006F97D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA733C521D727478006F97D8 /* UPP_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UPP_App.xcdatamodel; sourceTree = "<group>"; };
+		DA733C541D727478006F97D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA733C571D727478006F97D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DA733C591D727478006F97D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA733C5E1D727478006F97D8 /* UPP AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UPP AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA733C621D727478006F97D8 /* UPP_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPP_AppTests.swift; sourceTree = "<group>"; };
+		DA733C641D727478006F97D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA733C691D727478006F97D8 /* UPP AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UPP AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA733C6D1D727478006F97D8 /* UPP_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPP_AppUITests.swift; sourceTree = "<group>"; };
+		DA733C6F1D727478006F97D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA733C7B1D7274A9006F97D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA733C7D1D7278BA006F97D8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DA733C7F1D7278C5006F97D8 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DA733C821D727A90006F97D8 /* SignUp Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SignUp Button.png"; sourceTree = "<group>"; };
+		DA733C841D727AAF006F97D8 /* Login Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login Button.png"; sourceTree = "<group>"; };
+		DA733C861D727ABB006F97D8 /* Grey Box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grey Box.png"; sourceTree = "<group>"; };
+		DA733C891D727C5C006F97D8 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		DA733C8A1D727C5C006F97D8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		DA733C8B1D727C5C006F97D8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DA733C8C1D727C5C006F97D8 /* CommonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		DA733C8D1D727C5C006F97D8 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		DA733C8E1D727C5C006F97D8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DA733C8F1D727C5C006F97D8 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		DA733C901D727C5C006F97D8 /* AEXML.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEXML.swift; sourceTree = "<group>"; };
+		DA733C991D727D01006F97D8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DA733C9B1D727D8D006F97D8 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		DA733C9C1D727DEE006F97D8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DA733C9D1D727DEE006F97D8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		DA7CB8821D768C53008BA705 /* WhiteCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteCircle.png; sourceTree = "<group>"; };
+		DA7CB8841D768EAD008BA705 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA733C441D727478006F97D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF1EF390230E7ECC14BD886A /* Pods_UPP_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA733C5B1D727478006F97D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA733C661D727478006F97D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B1691E8E919984E0EEE3D6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16A1D7128AC361CB8E78B881 /* Pods-UPP App.debug.xcconfig */,
+				7753506AEF9413FF76DB3D40 /* Pods-UPP App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD40B95AC3C442C2513DDCA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79C70CC2D8A856877D15E86D /* Pods_UPP_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA733C3E1D727478006F97D8 = {
+			isa = PBXGroup;
+			children = (
+				DA733C491D727478006F97D8 /* UPP App */,
+				DA733C611D727478006F97D8 /* UPP AppTests */,
+				DA733C6C1D727478006F97D8 /* UPP AppUITests */,
+				DA733C481D727478006F97D8 /* Products */,
+				1B1691E8E919984E0EEE3D6C /* Pods */,
+				AD40B95AC3C442C2513DDCA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DA733C481D727478006F97D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA733C471D727478006F97D8 /* UPP App.app */,
+				DA733C5E1D727478006F97D8 /* UPP AppTests.xctest */,
+				DA733C691D727478006F97D8 /* UPP AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA733C491D727478006F97D8 /* UPP App */ = {
+			isa = PBXGroup;
+			children = (
+				DA733C4A1D727478006F97D8 /* AppDelegate.swift */,
+				DA733C7F1D7278C5006F97D8 /* RegisterViewController.swift */,
+				DA733C7D1D7278BA006F97D8 /* LoginViewController.swift */,
+				DA733C991D727D01006F97D8 /* ProfileViewController.swift */,
+				5EA60A031D7B161600629845 /* TimelineViewController.swift */,
+				5EA60A051D7B2A2B00629845 /* TweetTableViewCell1.swift */,
+				5EA60A071D7B2E4C00629845 /* TweetViewTableViewCell.swift */,
+				DA733C4C1D727478006F97D8 /* ViewController.swift */,
+				5EA609FF1D7B15A300629845 /* Post.swift */,
+				5EA60A001D7B15A300629845 /* User.swift */,
+				DA733C4E1D727478006F97D8 /* Main.storyboard */,
+				DA733C561D727478006F97D8 /* LaunchScreen.storyboard */,
+				DA733C591D727478006F97D8 /* Info.plist */,
+				DA733C7B1D7274A9006F97D8 /* GoogleService-Info.plist */,
+				DA733C511D727478006F97D8 /* UPP_App.xcdatamodeld */,
+				DA733C881D727C4C006F97D8 /* Helper Files */,
+				DA733C811D727A68006F97D8 /* Pictures */,
+			);
+			path = "UPP App";
+			sourceTree = "<group>";
+		};
+		DA733C611D727478006F97D8 /* UPP AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA733C621D727478006F97D8 /* UPP_AppTests.swift */,
+				DA733C641D727478006F97D8 /* Info.plist */,
+			);
+			path = "UPP AppTests";
+			sourceTree = "<group>";
+		};
+		DA733C6C1D727478006F97D8 /* UPP AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA733C6D1D727478006F97D8 /* UPP_AppUITests.swift */,
+				DA733C6F1D727478006F97D8 /* Info.plist */,
+			);
+			path = "UPP AppUITests";
+			sourceTree = "<group>";
+		};
+		DA733C811D727A68006F97D8 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				DA733C541D727478006F97D8 /* Assets.xcassets */,
+				DA2D01511D728374001382F5 /* yellowbox.png */,
+				DA7CB8821D768C53008BA705 /* WhiteCircle.png */,
+				DA7CB8841D768EAD008BA705 /* user.png */,
+				DA2D014F1D728264001382F5 /* Sign-up-page-new-1_0001s_0002s_0000_txt-input-copy.png */,
+				DA733C841D727AAF006F97D8 /* Login Button.png */,
+				DA733C861D727ABB006F97D8 /* Grey Box.png */,
+				DA733C821D727A90006F97D8 /* SignUp Button.png */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		DA733C881D727C4C006F97D8 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA733C9B1D727D8D006F97D8 /* Bridging-Header.h */,
+				DA733C891D727C5C006F97D8 /* UIViewExtensions.swift */,
+				DA733C8A1D727C5C006F97D8 /* Helper.swift */,
+				DA733C8B1D727C5C006F97D8 /* Constants.swift */,
+				DA733C8C1D727C5C006F97D8 /* CommonUtils.swift */,
+				DA733C8D1D727C5C006F97D8 /* AppState.swift */,
+				DA733C8E1D727C5C006F97D8 /* Extensions.swift */,
+				DA733C8F1D727C5C006F97D8 /* TextField.swift */,
+				DA733C901D727C5C006F97D8 /* AEXML.swift */,
+				DA733C9F1D727E09006F97D8 /* MBProgressHUD-master */,
+			);
+			name = "Helper Files";
+			sourceTree = "<group>";
+		};
+		DA733C9F1D727E09006F97D8 /* MBProgressHUD-master */ = {
+			isa = PBXGroup;
+			children = (
+				DA733C9C1D727DEE006F97D8 /* MBProgressHUD.h */,
+				DA733C9D1D727DEE006F97D8 /* MBProgressHUD.m */,
+			);
+			name = "MBProgressHUD-master";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA733C461D727478006F97D8 /* UPP App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA733C721D727478006F97D8 /* Build configuration list for PBXNativeTarget "UPP App" */;
+			buildPhases = (
+				41A7EA5B106EBF38B914D060 /* [CP] Check Pods Manifest.lock */,
+				DA733C431D727478006F97D8 /* Sources */,
+				DA733C441D727478006F97D8 /* Frameworks */,
+				DA733C451D727478006F97D8 /* Resources */,
+				B7FF6D73BA3AC27887E4EF3C /* [CP] Embed Pods Frameworks */,
+				1607E7DB1E5031C82DC6A644 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UPP App";
+			productName = "UPP App";
+			productReference = DA733C471D727478006F97D8 /* UPP App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA733C5D1D727478006F97D8 /* UPP AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA733C751D727478006F97D8 /* Build configuration list for PBXNativeTarget "UPP AppTests" */;
+			buildPhases = (
+				DA733C5A1D727478006F97D8 /* Sources */,
+				DA733C5B1D727478006F97D8 /* Frameworks */,
+				DA733C5C1D727478006F97D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA733C601D727478006F97D8 /* PBXTargetDependency */,
+			);
+			name = "UPP AppTests";
+			productName = "UPP AppTests";
+			productReference = DA733C5E1D727478006F97D8 /* UPP AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA733C681D727478006F97D8 /* UPP AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA733C781D727478006F97D8 /* Build configuration list for PBXNativeTarget "UPP AppUITests" */;
+			buildPhases = (
+				DA733C651D727478006F97D8 /* Sources */,
+				DA733C661D727478006F97D8 /* Frameworks */,
+				DA733C671D727478006F97D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA733C6B1D727478006F97D8 /* PBXTargetDependency */,
+			);
+			name = "UPP AppUITests";
+			productName = "UPP AppUITests";
+			productReference = DA733C691D727478006F97D8 /* UPP AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA733C3F1D727478006F97D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Harloch;
+				TargetAttributes = {
+					DA733C461D727478006F97D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DA733C5D1D727478006F97D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DA733C461D727478006F97D8;
+					};
+					DA733C681D727478006F97D8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DA733C461D727478006F97D8;
+					};
+				};
+			};
+			buildConfigurationList = DA733C421D727478006F97D8 /* Build configuration list for PBXProject "UPP App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA733C3E1D727478006F97D8;
+			productRefGroup = DA733C481D727478006F97D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA733C461D727478006F97D8 /* UPP App */,
+				DA733C5D1D727478006F97D8 /* UPP AppTests */,
+				DA733C681D727478006F97D8 /* UPP AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA733C451D727478006F97D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA733C851D727AAF006F97D8 /* Login Button.png in Resources */,
+				DA733C581D727478006F97D8 /* LaunchScreen.storyboard in Resources */,
+				DA7CB8831D768C53008BA705 /* WhiteCircle.png in Resources */,
+				DA7CB8851D768EAD008BA705 /* user.png in Resources */,
+				DA2D01521D728374001382F5 /* yellowbox.png in Resources */,
+				DA733C7C1D7274A9006F97D8 /* GoogleService-Info.plist in Resources */,
+				DA733C831D727A90006F97D8 /* SignUp Button.png in Resources */,
+				DA733C871D727ABB006F97D8 /* Grey Box.png in Resources */,
+				DA2D01501D728264001382F5 /* Sign-up-page-new-1_0001s_0002s_0000_txt-input-copy.png in Resources */,
+				DA733C551D727478006F97D8 /* Assets.xcassets in Resources */,
+				DA733C501D727478006F97D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA733C5C1D727478006F97D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA733C671D727478006F97D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1607E7DB1E5031C82DC6A644 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UPP App/Pods-UPP App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41A7EA5B106EBF38B914D060 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7FF6D73BA3AC27887E4EF3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UPP App/Pods-UPP App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA733C431D727478006F97D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA733C7E1D7278BA006F97D8 /* LoginViewController.swift in Sources */,
+				DA733C951D727C5C006F97D8 /* AppState.swift in Sources */,
+				DA733C921D727C5C006F97D8 /* Helper.swift in Sources */,
+				DA733C971D727C5C006F97D8 /* TextField.swift in Sources */,
+				DA733C9A1D727D01006F97D8 /* ProfileViewController.swift in Sources */,
+				5EA60A041D7B161600629845 /* TimelineViewController.swift in Sources */,
+				DA733C801D7278C5006F97D8 /* RegisterViewController.swift in Sources */,
+				DA733C4D1D727478006F97D8 /* ViewController.swift in Sources */,
+				5EA60A021D7B15A300629845 /* User.swift in Sources */,
+				DA733C9E1D727DEE006F97D8 /* MBProgressHUD.m in Sources */,
+				5EA60A081D7B2E4C00629845 /* TweetViewTableViewCell.swift in Sources */,
+				DA733C4B1D727478006F97D8 /* AppDelegate.swift in Sources */,
+				5EA60A061D7B2A2B00629845 /* TweetTableViewCell1.swift in Sources */,
+				DA733C981D727C5C006F97D8 /* AEXML.swift in Sources */,
+				DA733C911D727C5C006F97D8 /* UIViewExtensions.swift in Sources */,
+				5EA60A011D7B15A300629845 /* Post.swift in Sources */,
+				DA733C531D727478006F97D8 /* UPP_App.xcdatamodeld in Sources */,
+				DA733C941D727C5C006F97D8 /* CommonUtils.swift in Sources */,
+				DA733C961D727C5C006F97D8 /* Extensions.swift in Sources */,
+				DA733C931D727C5C006F97D8 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA733C5A1D727478006F97D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA733C631D727478006F97D8 /* UPP_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA733C651D727478006F97D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA733C6E1D727478006F97D8 /* UPP_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA733C601D727478006F97D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA733C461D727478006F97D8 /* UPP App */;
+			targetProxy = DA733C5F1D727478006F97D8 /* PBXContainerItemProxy */;
+		};
+		DA733C6B1D727478006F97D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA733C461D727478006F97D8 /* UPP App */;
+			targetProxy = DA733C6A1D727478006F97D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA733C4E1D727478006F97D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA733C4F1D727478006F97D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DA733C561D727478006F97D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA733C571D727478006F97D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA733C701D727478006F97D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DA733C711D727478006F97D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA733C731D727478006F97D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A1D7128AC361CB8E78B881 /* Pods-UPP App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "UPP App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.UPP-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/UPP App/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA733C741D727478006F97D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7753506AEF9413FF76DB3D40 /* Pods-UPP App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "UPP App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.UPP-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/UPP App/Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA733C761D727478006F97D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "UPP AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.UPP-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UPP App.app/UPP App";
+			};
+			name = Debug;
+		};
+		DA733C771D727478006F97D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "UPP AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.UPP-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UPP App.app/UPP App";
+			};
+			name = Release;
+		};
+		DA733C791D727478006F97D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "UPP AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.UPP-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "UPP App";
+			};
+			name = Debug;
+		};
+		DA733C7A1D727478006F97D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "UPP AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.harloch.UPP-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "UPP App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA733C421D727478006F97D8 /* Build configuration list for PBXProject "UPP App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA733C701D727478006F97D8 /* Debug */,
+				DA733C711D727478006F97D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA733C721D727478006F97D8 /* Build configuration list for PBXNativeTarget "UPP App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA733C731D727478006F97D8 /* Debug */,
+				DA733C741D727478006F97D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA733C751D727478006F97D8 /* Build configuration list for PBXNativeTarget "UPP AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA733C761D727478006F97D8 /* Debug */,
+				DA733C771D727478006F97D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA733C781D727478006F97D8 /* Build configuration list for PBXNativeTarget "UPP AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA733C791D727478006F97D8 /* Debug */,
+				DA733C7A1D727478006F97D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA733C511D727478006F97D8 /* UPP_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA733C521D727478006F97D8 /* UPP_App.xcdatamodel */,
+			);
+			currentVersion = DA733C521D727478006F97D8 /* UPP_App.xcdatamodel */;
+			path = UPP_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DA733C3F1D727478006F97D8 /* Project object */;
+}

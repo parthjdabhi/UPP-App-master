@@ -1,0 +1,6 @@
+framework module Pods_UPP_App {
+  umbrella header "Pods-UPP App-umbrella.h"
+
+  export *
+  module * { export * }
+}

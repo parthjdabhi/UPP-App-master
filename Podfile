@@ -12,4 +12,6 @@ pod 'GTMOAuth2', '~> 1.1.0'
 pod 'OAuthSwift', '~> 0.5.0'
 pod 'SDWebImage', '~>3.8'
 
+pod 'SVProgressHUD', '~> 2.0'
+
 end

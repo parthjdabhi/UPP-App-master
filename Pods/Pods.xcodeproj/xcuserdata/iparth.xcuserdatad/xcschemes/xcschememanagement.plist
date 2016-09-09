@@ -6,38 +6,38 @@
 	<dict>
 		<key>GTMOAuth2.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>OAuthSwift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-UPP App.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>036C8D4A018D37BDE29317E2F8204132</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>15A4744AA30B6D15F683FB9D986D0DE2</key>
+		<key>29C761EB1D405378DD5E4575A2315061</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -48,6 +48,16 @@
 			<true/>
 		</dict>
 		<key>6C93DE13A9E39F5C57B693BE90DBB2D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91D3F0BDAE13A46B437AD589F493C836</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE376A88DC342056B60ECD22A7272E0C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

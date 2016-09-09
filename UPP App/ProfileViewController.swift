@@ -110,7 +110,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
             let base64String = self.imgToBase64(photo.image!)
             let strProfile = base64String as String
             
-            FIRDatabase.database().reference().child("users").child(AppState.MyUserID()).setValue(strProfile, forKey: "image")
+            FIRDatabase.database().reference().child("users").child(MyUserID).setValue(strProfile, forKey: "image")
         }
         
         dismissViewControllerAnimated(true, completion: nil)
@@ -131,12 +131,21 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         let userID = FIRAuth.auth()?.currentUser?.uid
         if let postText = self.postField.text {
-            self.dbRef.childByAutoId().updateChildValues(["Text": postText, "userID": userID!])
+            //self.dbRef.childByAutoId().updateChildValues(["Text": postText, "userID": userID!])
+            CommonUtils.sharedUtils.showProgress(self.view, label: "Loading..")
+            self.dbRef.childByAutoId().updateChildValues(["Text": postText, "userID": userID!]) { (error, ref) in
+                CommonUtils.sharedUtils.hideProgress()
+                if error == nil {
+                    CommonUtils.sharedUtils.showAlert(self, title: "Message", message: "Your tweet posted successfully!")
+                    self.postField.text = ""
+                }
+            }
             
             //let post = Post(content: postText, addedByUser: "MyUID")
             //let postRef = self.dbRef.child(postText.lowercaseString)
             //postRef.setValue(post.toAnyObject())
         }
+        
     }
     
     

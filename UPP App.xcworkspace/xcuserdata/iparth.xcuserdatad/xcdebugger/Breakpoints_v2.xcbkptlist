@@ -6,11 +6,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UPP App/TimelineViewController.swift"
-            timestampString = "494607659.875883"
+            timestampString = "495125861.588318"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -44,11 +44,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UPP App/Post.swift"
-            timestampString = "494612382.257171"
+            timestampString = "495123802.860041"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "init(snapshot:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -60,12 +60,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UPP App/TweetViewTableViewCell.swift"
-            timestampString = "494612535.17058"
+            timestampString = "495129232.425429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "configure(_:name:uname:tweet:)"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "configure(forPost:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UPP_App.TweetViewTableViewCell.configure (Swift.Optional&lt;Swift.String&gt;, name : Swift.String, uname : Swift.Optional&lt;Swift.String&gt;, tweet : Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "UPP App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iparth/Desktop/iWork/Dustin%20Allen%20-%20Harloch/7%20Up%20App/UPP-App-master%2003%20Sept/UPP%20App/TweetViewTableViewCell.swift"
+                  timestampString = "495123502.654079"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "2849">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UPP_App.TweetViewTableViewCell.configure (Swift.Optional&lt;Swift.String&gt;, name : Swift.String, uname : Swift.Optional&lt;Swift.String&gt;, tweet : Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "UPP App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iparth/Desktop/iWork/Dustin%20Allen%20-%20Harloch/7%20Up%20App/UPP-App-master%2003%20Sept/UPP%20App/TweetViewTableViewCell.swift"
+                  timestampString = "495123502.654314"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "4139">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UPP App/TweetViewTableViewCell.swift"
+            timestampString = "495129232.425429"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "configure(forPost:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

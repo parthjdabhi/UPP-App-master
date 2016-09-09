@@ -21,12 +21,16 @@ class AppState: NSObject {
     
     var clrYellow: UIColor? = UIColor(red: (255.0/255.0), green: (204.0/255.0), blue: (1.0/255.0), alpha: 1)
     
-    static func MyUserID() -> String {
-        return FIRAuth.auth()?.currentUser?.uid ?? ""
-    }
+//    static func MyUserID() -> String {
+//        return FIRAuth.auth()?.currentUser?.uid ?? ""
+//    }
     
     static func Logout() {
         NSUserDefaults.standardUserDefaults().removeObjectForKey("lastSwiped_top2000")
         
     }
 }
+
+var MyUserID:String = {
+    return FIRAuth.auth()?.currentUser?.uid ?? ""
+}()

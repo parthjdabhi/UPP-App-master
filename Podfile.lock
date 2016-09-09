@@ -63,6 +63,7 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
   - Firebase
@@ -73,6 +74,7 @@ DEPENDENCIES:
   - GTMOAuth2 (~> 1.1.0)
   - OAuthSwift (~> 0.5.0)
   - SDWebImage (~> 3.8)
+  - SVProgressHUD (~> 2.0)
 
 SPEC CHECKSUMS:
   Firebase: 94e63112efcad75226c0356a8f3032397b8547c9
@@ -92,7 +94,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 6aacd0ab48ddf0c3633ab2642d792abfcad1b08a
   OAuthSwift: 1ef042d4362e755e24a78f158d817245641a5d24
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: d8c416ad92f7fe08daaae7ce704582a155507d46
+PODFILE CHECKSUM: d4971d219786dd54bf3d3979971ea7f81c32b46e
 
 COCOAPODS: 1.0.1

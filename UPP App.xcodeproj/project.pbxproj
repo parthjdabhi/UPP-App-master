@@ -12,6 +12,8 @@
 		5EA60A041D7B161600629845 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA60A031D7B161600629845 /* TimelineViewController.swift */; };
 		5EA60A061D7B2A2B00629845 /* TweetTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA60A051D7B2A2B00629845 /* TweetTableViewCell1.swift */; };
 		5EA60A081D7B2E4C00629845 /* TweetViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA60A071D7B2E4C00629845 /* TweetViewTableViewCell.swift */; };
+		5EF692AB1D83147600428CD2 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF692AA1D83147600428CD2 /* Storyboard.storyboard */; };
+		5EF692AD1D8315D200428CD2 /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF692AC1D8315D200428CD2 /* ReplyViewController.swift */; };
 		BF1EF390230E7ECC14BD886A /* Pods_UPP_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C70CC2D8A856877D15E86D /* Pods_UPP_App.framework */; };
 		DA2D01501D728264001382F5 /* Sign-up-page-new-1_0001s_0002s_0000_txt-input-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2D014F1D728264001382F5 /* Sign-up-page-new-1_0001s_0002s_0000_txt-input-copy.png */; };
 		DA2D01521D728374001382F5 /* yellowbox.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2D01511D728374001382F5 /* yellowbox.png */; };
@@ -67,6 +69,8 @@
 		5EA60A031D7B161600629845 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		5EA60A051D7B2A2B00629845 /* TweetTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell1.swift; sourceTree = "<group>"; };
 		5EA60A071D7B2E4C00629845 /* TweetViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetViewTableViewCell.swift; sourceTree = "<group>"; };
+		5EF692AA1D83147600428CD2 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		5EF692AC1D8315D200428CD2 /* ReplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
 		7753506AEF9413FF76DB3D40 /* Pods-UPP App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UPP App.release.xcconfig"; path = "Pods/Target Support Files/Pods-UPP App/Pods-UPP App.release.xcconfig"; sourceTree = "<group>"; };
 		79C70CC2D8A856877D15E86D /* Pods_UPP_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UPP_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2D014F1D728264001382F5 /* Sign-up-page-new-1_0001s_0002s_0000_txt-input-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign-up-page-new-1_0001s_0002s_0000_txt-input-copy.png"; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 		DA733C3E1D727478006F97D8 = {
 			isa = PBXGroup;
 			children = (
+				5EF692AA1D83147600428CD2 /* Storyboard.storyboard */,
 				DA733C491D727478006F97D8 /* UPP App */,
 				DA733C611D727478006F97D8 /* UPP AppTests */,
 				DA733C6C1D727478006F97D8 /* UPP AppUITests */,
@@ -182,16 +187,17 @@
 				5EA60A031D7B161600629845 /* TimelineViewController.swift */,
 				5EA60A051D7B2A2B00629845 /* TweetTableViewCell1.swift */,
 				5EA60A071D7B2E4C00629845 /* TweetViewTableViewCell.swift */,
+				5EF692AC1D8315D200428CD2 /* ReplyViewController.swift */,
 				DA733C4C1D727478006F97D8 /* ViewController.swift */,
 				5EA609FF1D7B15A300629845 /* Post.swift */,
 				5EA60A001D7B15A300629845 /* User.swift */,
 				DA733C4E1D727478006F97D8 /* Main.storyboard */,
 				DA733C561D727478006F97D8 /* LaunchScreen.storyboard */,
+				DA733C881D727C4C006F97D8 /* Helper Files */,
+				DA733C811D727A68006F97D8 /* Pictures */,
 				DA733C591D727478006F97D8 /* Info.plist */,
 				DA733C7B1D7274A9006F97D8 /* GoogleService-Info.plist */,
 				DA733C511D727478006F97D8 /* UPP_App.xcdatamodeld */,
-				DA733C881D727C4C006F97D8 /* Helper Files */,
-				DA733C811D727A68006F97D8 /* Pictures */,
 			);
 			path = "UPP App";
 			sourceTree = "<group>";
@@ -367,6 +373,7 @@
 				DA7CB8831D768C53008BA705 /* WhiteCircle.png in Resources */,
 				DA7CB8851D768EAD008BA705 /* user.png in Resources */,
 				DA2D01521D728374001382F5 /* yellowbox.png in Resources */,
+				5EF692AB1D83147600428CD2 /* Storyboard.storyboard in Resources */,
 				DA733C7C1D7274A9006F97D8 /* GoogleService-Info.plist in Resources */,
 				DA733C831D727A90006F97D8 /* SignUp Button.png in Resources */,
 				DA733C871D727ABB006F97D8 /* Grey Box.png in Resources */,
@@ -452,6 +459,7 @@
 				DA733C9A1D727D01006F97D8 /* ProfileViewController.swift in Sources */,
 				5EA60A041D7B161600629845 /* TimelineViewController.swift in Sources */,
 				DA733C801D7278C5006F97D8 /* RegisterViewController.swift in Sources */,
+				5EF692AD1D8315D200428CD2 /* ReplyViewController.swift in Sources */,
 				DA733C4D1D727478006F97D8 /* ViewController.swift in Sources */,
 				5EA60A021D7B15A300629845 /* User.swift in Sources */,
 				DA733C9E1D727DEE006F97D8 /* MBProgressHUD.m in Sources */,

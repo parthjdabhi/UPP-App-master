@@ -48,11 +48,12 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     func startObservingDB () {
         dbRef.observeEventType(.Value, withBlock: {
             (snapshot:FIRDataSnapshot) in
-            var newPosts = [Post]()
+            var newPosts:Array<Post> = []
             
             for post in snapshot.children {
+                print(( post as! FIRDataSnapshot).valueInExportFormat())
                 let postObject = Post(snapshot: post as! FIRDataSnapshot)
-                newPosts.append(postObject)
+                newPosts.insert(postObject, atIndex: 0)
             }
             
             self.posts = newPosts
@@ -77,13 +78,12 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let post = posts[indexPath.row]
-        
 //        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 //        cell.textLabel?.text = post.content
 //        cell.detailTextLabel?.text = post.addedByUser
         
         let cell: TweetViewTableViewCell = tableView.dequeueReusableCellWithIdentifier("TweetViewTableViewCell", forIndexPath: indexPath) as! TweetViewTableViewCell
-        cell.configure(nil,name:post.key,uname:"username",tweet:post.content)
+        cell.configure(forPost: post)
         
         return cell
     }
@@ -92,8 +92,14 @@ class TimelineViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             let post = posts[indexPath.row]
-            
             post.itemRef?.removeValue()
         }
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let replyVC = self.storyboard?.instantiateViewControllerWithIdentifier("ReplyViewController") as! ReplyViewController
+        replyVC.post = posts[indexPath.row]
+        self.navigationController?.pushViewController(replyVC, animated: true)
     }
 }

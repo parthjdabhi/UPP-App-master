@@ -442,22 +442,46 @@
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbW-OQ-5R0">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="22"/>
-                                                            <state key="normal" image="reply"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" image="reply">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="actionReply:" destination="Qj7-7q-oFf" eventType="touchUpInside" id="ge6-4P-Foh"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IS3-BK-6Ce">
                                                             <rect key="frame" x="100" y="0.0" width="100" height="22"/>
-                                                            <state key="normal" image="retweet"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" image="retweet">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="actionRepost:" destination="Qj7-7q-oFf" eventType="touchUpInside" id="Yjl-Nu-TlZ"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb8-SA-Jtu">
                                                             <rect key="frame" x="200" y="0.0" width="100" height="22"/>
-                                                            <state key="normal" image="heart"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" image="heart">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="actionLike:" destination="Qj7-7q-oFf" eventType="touchUpInside" id="qRu-8r-z2f"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="o40-Vt-ddc"/>
                                                     </constraints>
                                                 </stackView>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is a tweet text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gfF-gl-FbR">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="This is a tweet text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gfF-gl-FbR">
                                                     <rect key="frame" x="62" y="30" width="300" height="48"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -485,6 +509,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="btnLike" destination="Wb8-SA-Jtu" id="ggs-jn-ZbQ"/>
+                                            <outlet property="btnReply" destination="nbW-OQ-5R0" id="H2J-DT-a1G"/>
+                                            <outlet property="btnRepost" destination="IS3-BK-6Ce" id="sc9-Za-Qda"/>
                                             <outlet property="name" destination="aMY-yl-2dS" id="3h9-vU-oXo"/>
                                             <outlet property="profilePic" destination="WTo-7J-jOF" id="hep-K9-8wj"/>
                                             <outlet property="tweet" destination="gfF-gl-FbR" id="eAv-HH-56W"/>
@@ -514,6 +541,206 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KP0-MN-yb8" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="900.5" y="282.5"/>
+        </scene>
+        <!--Reply View Controller-->
+        <scene sceneID="8sN-6W-PKd">
+            <objects>
+                <viewController storyboardIdentifier="ReplyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qmE-CY-x7c" customClass="ReplyViewController" customModule="UPP_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xo8-Aa-LLU"/>
+                        <viewControllerLayoutGuide type="bottom" id="sbb-7j-qvl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GlR-D1-AsV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CRZ-de-hbM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="503"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Mmf-BD-tee">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="102"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mmf-BD-tee" id="qny-Rz-RdL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TweetViewTableViewCell" rowHeight="102" id="ipT-gI-PYP" customClass="TweetViewTableViewCell" customModule="UPP_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="130" width="375" height="102"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ipT-gI-PYP" id="QPO-wU-WfZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="101"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="hsY-l7-8JU">
+                                                    <rect key="frame" x="14" y="8" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="r2g-2a-aXQ"/>
+                                                        <constraint firstAttribute="height" constant="40" id="yO4-oM-XcZ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Users Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dN3-QZ-LYR">
+                                                    <rect key="frame" x="62" y="8" width="94" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecT-B1-UlO">
+                                                    <rect key="frame" x="164" y="11" width="72" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sv3-U8-cMO">
+                                                    <rect key="frame" x="62" y="77" width="300" height="22"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ck-yM-92W">
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" image="reply">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="actionReply:" destination="ipT-gI-PYP" eventType="touchUpInside" id="xqw-pj-VEa"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YN-7k-szp">
+                                                            <rect key="frame" x="100" y="0.0" width="100" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" image="retweet">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="actionRepost:" destination="ipT-gI-PYP" eventType="touchUpInside" id="aaO-iu-E0L"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6j-E0-vUQ">
+                                                            <rect key="frame" x="200" y="0.0" width="100" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="imageEdgeInsets" minX="-6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" image="heart">
+                                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="actionLike:" destination="ipT-gI-PYP" eventType="touchUpInside" id="UzU-7z-y5m"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="r1h-vw-eUw"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="This is a tweet text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xtI-w4-Q2N">
+                                                    <rect key="frame" x="62" y="30" width="300" height="48"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="mjE-TH-mEv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dN3-QZ-LYR" firstAttribute="leading" secondItem="hsY-l7-8JU" secondAttribute="trailing" constant="8" id="4en-bQ-oDw"/>
+                                                <constraint firstItem="hsY-l7-8JU" firstAttribute="leading" secondItem="QPO-wU-WfZ" secondAttribute="leadingMargin" constant="6" id="6PI-uj-neg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xtI-w4-Q2N" secondAttribute="trailing" constant="5" id="7rj-FD-sER"/>
+                                                <constraint firstItem="ecT-B1-UlO" firstAttribute="leading" secondItem="dN3-QZ-LYR" secondAttribute="trailing" constant="8" id="8hP-dq-Che"/>
+                                                <constraint firstItem="sv3-U8-cMO" firstAttribute="top" secondItem="xtI-w4-Q2N" secondAttribute="bottom" constant="-1" id="GHu-qC-v6y"/>
+                                                <constraint firstItem="sv3-U8-cMO" firstAttribute="trailing" secondItem="xtI-w4-Q2N" secondAttribute="trailing" id="Pqz-Nd-AbO"/>
+                                                <constraint firstItem="sv3-U8-cMO" firstAttribute="leading" secondItem="xtI-w4-Q2N" secondAttribute="leading" id="Vyk-nL-cdX"/>
+                                                <constraint firstAttribute="topMargin" secondItem="hsY-l7-8JU" secondAttribute="top" id="YNY-rI-av3"/>
+                                                <constraint firstItem="xtI-w4-Q2N" firstAttribute="leading" secondItem="dN3-QZ-LYR" secondAttribute="leading" id="ZiB-b3-IjZ"/>
+                                                <constraint firstItem="sv3-U8-cMO" firstAttribute="width" secondItem="xtI-w4-Q2N" secondAttribute="width" id="aMs-Ub-O0b"/>
+                                                <constraint firstItem="ecT-B1-UlO" firstAttribute="centerY" secondItem="dN3-QZ-LYR" secondAttribute="centerY" id="d2Y-Gz-l9x"/>
+                                                <constraint firstItem="xtI-w4-Q2N" firstAttribute="top" secondItem="QPO-wU-WfZ" secondAttribute="topMargin" constant="22" id="o8U-TJ-xfi"/>
+                                                <constraint firstItem="dN3-QZ-LYR" firstAttribute="top" secondItem="hsY-l7-8JU" secondAttribute="top" id="tHK-XZ-nuw"/>
+                                                <constraint firstItem="xtI-w4-Q2N" firstAttribute="top" secondItem="dN3-QZ-LYR" secondAttribute="bottom" constant="1" id="v87-cI-dEB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnLike" destination="W6j-E0-vUQ" id="6GD-1C-FoA"/>
+                                            <outlet property="btnReply" destination="1Ck-yM-92W" id="D53-bj-kIS"/>
+                                            <outlet property="btnRepost" destination="8YN-7k-szp" id="fYy-5u-8g1"/>
+                                            <outlet property="name" destination="dN3-QZ-LYR" id="bHy-0D-AAK"/>
+                                            <outlet property="profilePic" destination="hsY-l7-8JU" id="Fyz-N7-5gN"/>
+                                            <outlet property="tweet" destination="xtI-w4-Q2N" id="tpr-pL-RYl"/>
+                                            <outlet property="uname" destination="ecT-B1-UlO" id="H9G-tq-BDF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qmE-CY-x7c" id="5Dc-8h-4e9"/>
+                                    <outlet property="delegate" destination="qmE-CY-x7c" id="3WB-aM-UFc"/>
+                                </connections>
+                            </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="@user Reply to post." translatesAutoresizingMaskIntoConstraints="NO" id="Wdh-6R-koc">
+                                <rect key="frame" x="8" y="575" width="301" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="KdQ-mU-wl8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes" enablesReturnKeyAutomatically="YES"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtj-tY-q2e">
+                                <rect key="frame" x="317" y="575" width="50" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="w89-0S-AQZ"/>
+                                </constraints>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionReply:" destination="qmE-CY-x7c" eventType="touchUpInside" id="Ezl-f8-Xla"/>
+                                    <action selector="postButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hpz-xZ-FJr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ1-MI-J3M">
+                                <rect key="frame" x="8" y="26" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kxZ-xv-6Eg"/>
+                                    <constraint firstAttribute="width" constant="56" id="rnR-Ro-MfQ"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBackButton:" destination="qmE-CY-x7c" eventType="touchUpInside" id="q5J-VY-tvj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="CRZ-de-hbM" firstAttribute="leading" secondItem="GlR-D1-AsV" secondAttribute="leading" id="8UD-F1-nCS"/>
+                            <constraint firstItem="IQ1-MI-J3M" firstAttribute="top" secondItem="xo8-Aa-LLU" secondAttribute="bottom" constant="6" id="HW6-aL-SKd"/>
+                            <constraint firstItem="sbb-7j-qvl" firstAttribute="top" secondItem="gtj-tY-q2e" secondAttribute="bottom" constant="8" id="Kx1-uq-H1t"/>
+                            <constraint firstAttribute="trailing" secondItem="CRZ-de-hbM" secondAttribute="trailing" id="S1b-Rx-NIV"/>
+                            <constraint firstItem="sbb-7j-qvl" firstAttribute="top" secondItem="Wdh-6R-koc" secondAttribute="bottom" constant="8" id="YG4-Wq-wcK"/>
+                            <constraint firstItem="Wdh-6R-koc" firstAttribute="leading" secondItem="GlR-D1-AsV" secondAttribute="leadingMargin" constant="-8" id="d7x-4R-Ofu"/>
+                            <constraint firstItem="CRZ-de-hbM" firstAttribute="top" secondItem="xo8-Aa-LLU" secondAttribute="bottom" constant="44" id="pUU-Zl-n0f"/>
+                            <constraint firstItem="gtj-tY-q2e" firstAttribute="top" secondItem="CRZ-de-hbM" secondAttribute="bottom" constant="8" id="qG1-Nc-DTp"/>
+                            <constraint firstItem="IQ1-MI-J3M" firstAttribute="leading" secondItem="GlR-D1-AsV" secondAttribute="leadingMargin" constant="-8" id="qvY-Hm-tru"/>
+                            <constraint firstItem="Wdh-6R-koc" firstAttribute="top" secondItem="CRZ-de-hbM" secondAttribute="bottom" constant="8" id="sdE-P1-YTg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gtj-tY-q2e" secondAttribute="trailing" constant="-8" id="tkr-k9-wre"/>
+                            <constraint firstItem="gtj-tY-q2e" firstAttribute="leading" secondItem="Wdh-6R-koc" secondAttribute="trailing" constant="8" id="umL-zp-Y7L"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tblReplies" destination="CRZ-de-hbM" id="Hje-Wt-MD2"/>
+                        <outlet property="txtReply" destination="Wdh-6R-koc" id="MAY-Q0-1WN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8d-Qn-D1J" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318.5" y="282.5"/>
         </scene>
     </scenes>
     <resources>
